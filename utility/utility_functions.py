@@ -98,7 +98,7 @@ def load_image(image_file, input_size=448, max_num=12):
 
 def get_kernel(repo_id: str = None, revision: str = None) -> types.ModuleType:
     pkg_name = 'triton_kernels'
-    kernel_path = Path('/hpc/groups/users-ai/llm_paper/models--kernels-community--triton_kernels/snapshots/fe4ef5eba8c97556f74511321f49f173f430fd83/build/torch-universal')
+    kernel_path = Path('')
     init_path = kernel_path / Path('triton_kernels') / Path('__init__.py')
     spec = importlib.util.spec_from_file_location(pkg_name, init_path,submodule_search_locations=[str(kernel_path / Path('triton_kernels'))])
     mod = importlib.util.module_from_spec(spec)
