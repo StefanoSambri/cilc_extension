@@ -1,0 +1,402 @@
+{
+  "0": {
+    "name": "board_ttt_0",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "1": {
+    "name": "board_ttt_1",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "2": {
+    "name": "board_ttt_2",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "3": {
+    "name": "board_ttt_3",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "4": {
+    "name": "board_ttt_4",
+    "board": "cell(1, 1, x).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, blank)."
+  },
+  "5": {
+    "name": "board_ttt_5",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "6": {
+    "name": "board_ttt_6",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "7": {
+    "name": "board_ttt_7",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "8": {
+    "name": "board_ttt_8",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "9": {
+    "name": "board_ttt_9",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "10": {
+    "name": "board_ttt_10",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "11": {
+    "name": "board_ttt_11",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "12": {
+    "name": "board_ttt_12",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "13": {
+    "name": "board_ttt_13",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "14": {
+    "name": "board_ttt_14",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "15": {
+    "name": "board_ttt_15",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "16": {
+    "name": "board_ttt_16",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "17": {
+    "name": "board_ttt_17",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "18": {
+    "name": "board_ttt_18",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "19": {
+    "name": "board_ttt_19",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "20": {
+    "name": "board_ttt_20",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "21": {
+    "name": "board_ttt_21",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "22": {
+    "name": "board_ttt_22",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "23": {
+    "name": "board_ttt_23",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "24": {
+    "name": "board_ttt_24",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "25": {
+    "name": "board_ttt_25",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "26": {
+    "name": "board_ttt_26",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "27": {
+    "name": "board_ttt_27",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "28": {
+    "name": "board_ttt_28",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "29": {
+    "name": "board_ttt_29",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, o).\ncell(3, 3, o)."
+  },
+  "30": {
+    "name": "board_ttt_30",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "31": {
+    "name": "board_ttt_31",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "32": {
+    "name": "board_ttt_32",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "33": {
+    "name": "board_ttt_33",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "34": {
+    "name": "board_ttt_34",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "35": {
+    "name": "board_ttt_35",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "36": {
+    "name": "board_ttt_36",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "37": {
+    "name": "board_ttt_37",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "38": {
+    "name": "board_ttt_38",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "39": {
+    "name": "board_ttt_39",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "40": {
+    "name": "board_ttt_40",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "41": {
+    "name": "board_ttt_41",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "42": {
+    "name": "board_ttt_42",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "43": {
+    "name": "board_ttt_43",
+    "board": "cell(1, 1, x).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "44": {
+    "name": "board_ttt_44",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "45": {
+    "name": "board_ttt_45",
+    "board": "cell(1, 1, x).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, blank)."
+  },
+  "46": {
+    "name": "board_ttt_46",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "47": {
+    "name": "board_ttt_47",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, o)."
+  },
+  "48": {
+    "name": "board_ttt_48",
+    "board": "cell(1, 1, x).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "49": {
+    "name": "board_ttt_49",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "50": {
+    "name": "board_mnist_0",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "51": {
+    "name": "board_mnist_1",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "52": {
+    "name": "board_mnist_2",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "53": {
+    "name": "board_mnist_3",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "54": {
+    "name": "board_mnist_4",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "55": {
+    "name": "board_mnist_5",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "56": {
+    "name": "board_mnist_6",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "57": {
+    "name": "board_mnist_7",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "58": {
+    "name": "board_mnist_8",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "59": {
+    "name": "board_mnist_9",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "60": {
+    "name": "board_mnist_10",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "61": {
+    "name": "board_mnist_11",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "62": {
+    "name": "board_mnist_12",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "63": {
+    "name": "board_mnist_13",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "64": {
+    "name": "board_mnist_14",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "65": {
+    "name": "board_mnist_15",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "66": {
+    "name": "board_mnist_16",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "67": {
+    "name": "board_mnist_17",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "68": {
+    "name": "board_mnist_18",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "69": {
+    "name": "board_mnist_19",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "70": {
+    "name": "board_mnist_20",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "71": {
+    "name": "board_mnist_21",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "72": {
+    "name": "board_mnist_22",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "73": {
+    "name": "board_mnist_23",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "74": {
+    "name": "board_mnist_24",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "75": {
+    "name": "board_mnist_25",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "76": {
+    "name": "board_mnist_26",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "77": {
+    "name": "board_mnist_27",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "78": {
+    "name": "board_mnist_28",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "79": {
+    "name": "board_mnist_29",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "80": {
+    "name": "board_mnist_30",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "81": {
+    "name": "board_mnist_31",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "82": {
+    "name": "board_mnist_32",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "83": {
+    "name": "board_mnist_33",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "84": {
+    "name": "board_mnist_34",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "85": {
+    "name": "board_mnist_35",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "86": {
+    "name": "board_mnist_36",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "87": {
+    "name": "board_mnist_37",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 2).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "88": {
+    "name": "board_mnist_38",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "89": {
+    "name": "board_mnist_39",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "90": {
+    "name": "board_mnist_40",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "91": {
+    "name": "board_mnist_41",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "92": {
+    "name": "board_mnist_42",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 2)."
+  },
+  "93": {
+    "name": "board_mnist_43",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "94": {
+    "name": "board_mnist_44",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "95": {
+    "name": "board_mnist_45",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "96": {
+    "name": "board_mnist_46",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "97": {
+    "name": "board_mnist_47",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 2)."
+  },
+  "98": {
+    "name": "board_mnist_48",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "99": {
+    "name": "board_mnist_49",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  }
+}
