@@ -37,6 +37,8 @@ OpenGVLab/InternVL3-38B-Instruct	            150ad666e0c733b809742decded1f748499
 XiaomiMiMo/MiMo-VL-7B-RL-2508	                4bfb270765825d2fa059011deb4c96fdd579be6f
 mistralai/Mistral-Small-3.2-24B-Instruct-2506	95a6d26c4bfb886c58daf9d3f7332c857cb27b43
 mistralai/Mistral-Small-3.1-24B-Instruct-2503	68faf511d618ef198fef186659617cfd2eb8e33a
+allenai/Molmo-7B-D-0924                         cab33fb7f1a40091911f81165f8481920621948f
+allenai/Molmo-7B-O-0924                         7a8c4bf80c839c243a6908c6ebbb0f1ee576d7ca
 AIDC-AI/Ovis2.5-2B	                            393c932b2a03e28eb9aaa503e3c4ab3ad384d958
 AIDC-AI/Ovis2.5-9B	                            d73b2283ae2a930b7762f8d7b8b8a3f0f3b5c3bd
 AIDC-AI/Ovis2-1B	                            642d0807bf09b89ed52ea97230ceab26c9a6ed2d

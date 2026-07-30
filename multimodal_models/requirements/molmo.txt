@@ -1,0 +1,14 @@
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+accelerate==1.10.1
+torch==2.9.0
+tensorflow==2.21.0
+einops==0.8.1
+pandas==2.3.3
+transformers==4.57.1
+tokenizers==0.22.1
+huggingface-hub==0.35.3
+Pillow==11.3.0
+numpy==2.3.3
+urllib3==2.3.0
