@@ -5,6 +5,7 @@ os.environ['OMP_NUM_THREADS'] = str(os.getenv('SLURM_CPUS_PER_TASK'))
 import re
 import gc
 import sys
+import json
 import torch
 import numpy as np
 import pandas as pd
@@ -18,7 +19,7 @@ script_dir = Path(__file__).resolve().parent
 base_dir = script_dir.parent
 sys.path.insert(0, str(base_dir))
 
-from utility.utility_functions import set_seeds, cache_dir, seed, trimmed_perplexity
+from utility.utility_functions import set_seeds, cache_dir, seed
 from utility.prompts import prompt
 
 set_seeds(seed)
@@ -69,6 +70,11 @@ for model_id in model_ids:
         dtype=torch.bfloat16
     )
     model.eval()
+    reasoning = False
+    thinking_allowed = None
+    truncated = None
+    truncated_ablation = None
+    trace_len = None
 
     results = []
     for _, row in df.iterrows():
@@ -126,25 +132,25 @@ for model_id in model_ids:
 
         nll = -np.sum(np.array(log_probs, dtype=np.float64)) / np.float64(len(log_probs))
         perplexity = np.exp(nll).astype(np.float64)
-        perplexity_99 = trimmed_perplexity(log_probs, 0.01)
-        perplexity_95 = trimmed_perplexity(log_probs, 0.05)
-        perplexity_90 = trimmed_perplexity(log_probs, 0.10)
 
         result = {
+            'reasoning': reasoning,
+            'ablation' : row['ablation'],
+            'thinking_allowed' : thinking_allowed,
+            'trace_len' : trace_len,
             'prompt': row['user'],
             'target': row['target'],
             'target_ids': target_ids,
             'probabilities': np.array(prob_hist, dtype=np.float64),
-            'top_20_tokens': top_tokens_hist,
-            'top_20_probs': np.array(top_probs_hist, dtype=np.float64),
-            'perplexity': np.float64(perplexity),
-            'perplexity_99': np.float64(perplexity_99),
-            'perplexity_95': np.float64(perplexity_95),
-            'perplexity_90': np.float64(perplexity_90)
+            'top_40_tokens': top_tokens_hist,
+            'top_40_probs': np.array(top_probs_hist, dtype=np.float64),
+            'perplexity': np.float64(perplexity)
         }
         results.append(result)
 
-    with output_file.open('wb') as f: np.save(f, results, allow_pickle=True)   
+    with output_file.open('wb') as f: np.save(f, results, allow_pickle=True)
+    if reasoning: 
+        with output_file.with_suffix('.json').open('w') as f: json.dump([{'n_truncated': truncated}, {'n_truncated_ablation': truncated_ablation}], f, indent=2)   
 
     del model, tokenizer, prob_hist, log_probs, logits, token_tensor, target_ids, input_data, outputs
     gc.collect()

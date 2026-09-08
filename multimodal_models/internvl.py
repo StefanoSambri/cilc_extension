@@ -74,13 +74,20 @@ for model_id in model_ids:
     )
     model.img_context_token_id = tokenizer.convert_tokens_to_ids('<IMG_CONTEXT>')
     model.eval()
+    reasoning = False
+    thinking_allowed = None
+    truncated_ttt = None
+    truncated_mnist = None
+    truncated_ablation_ttt = None
+    truncated_ablation_mnist = None
+    trace_len = None
 
     eos_token = '<|im_end|>'
 
     results = []
     for idx, row in df.iterrows():
 
-        prompt = prompt_ttt if idx < 50 else prompt_mnist
+        prompt = prompt_ttt if idx < 100 else prompt_mnist
         pixel_values = load_image(base_dir / Path(f'_dataset/dataset_img/{row["name"]}.png'), max_num=12).to(model.device, dtype=model.dtype)
         image_tokens = '<IMG_CONTEXT>' * (model.num_image_token * pixel_values.shape[0])
         text_with_img_pad = f'{image_tokens}\n{prompt}'
@@ -113,9 +120,6 @@ for model_id in model_ids:
 
         nll = -np.sum(np.array(log_probs, dtype=np.float64)) / np.float64(len(log_probs))
         perplexity = np.exp(nll).astype(np.float64)
-        perplexity_99 = trimmed_perplexity(log_probs, 0.01)
-        perplexity_95 = trimmed_perplexity(log_probs, 0.05)
-        perplexity_90 = trimmed_perplexity(log_probs, 0.10)
 
         result = {
             'image_name': row['name'],
@@ -123,16 +127,15 @@ for model_id in model_ids:
             'target': row['board'],
             'target_ids': target_ids,
             'probabilities': np.array(prob_hist, dtype=np.float64),
-            'top_20_tokens': top_tokens_hist,
-            'top_20_probs': np.array(top_probs_hist, dtype=np.float64),
-            'perplexity': np.float64(perplexity),
-            'perplexity_99': np.float64(perplexity_99),
-            'perplexity_95': np.float64(perplexity_95),
-            'perplexity_90': np.float64(perplexity_90)
+            'top_40_tokens': top_tokens_hist,
+            'top_40_probs': np.array(top_probs_hist, dtype=np.float64),
+            'perplexity': np.float64(perplexity)
         }
         results.append(result)
 
     with output_file.open('wb') as f: np.save(f, results, allow_pickle=True)   
+    if reasoning: 
+        with output_file.with_suffix('.json').open('w') as f: json.dump([{'n_truncated_ttt': truncated_ttt}, {'n_truncated_mnist': truncated_mnist}, {'n_truncated_ablation_ttt': truncated_ablation_ttt}, {'n_truncated_ablation_mnist': truncated_ablation_mnist}], f, indent=2)
 
     del model, processor, input_ids, outputs, logits, probs, token_tensor, input_data, image_flags, pixel_values
     gc.collect()

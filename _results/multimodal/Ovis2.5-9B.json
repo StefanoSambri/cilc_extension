@@ -1,0 +1,14 @@
+[
+  {
+    "n_truncated_ttt": 0
+  },
+  {
+    "n_truncated_ttt_ablation": 0
+  },
+  {
+    "n_truncated_mnist": 0
+  },
+  {
+    "n_truncated_mnist_ablation": 0
+  }
+]

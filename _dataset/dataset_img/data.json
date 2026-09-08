@@ -199,6 +199,206 @@
     "name": "board_ttt_49",
     "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
   },
+  "0a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "1a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "2a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "3a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "4a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, blank)."
+  },
+  "5a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "6a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "7a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "8a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "9a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "10a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "11a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "12a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "13a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "14a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "15a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "16a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "17a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "18a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "19a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "20a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "21a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "22a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "23a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "24a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "25a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "26a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, x)."
+  },
+  "27a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "28a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "29a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, o).\ncell(3, 3, o)."
+  },
+  "30a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "31a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, o).\ncell(3, 2, o).\ncell(3, 3, x)."
+  },
+  "32a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, x).\ncell(3, 3, blank)."
+  },
+  "33a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "34a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "35a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "36a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, x).\ncell(3, 3, o)."
+  },
+  "37a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, blank).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "38a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "39a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, blank).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "40a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, blank).\ncell(1, 3, blank).\ncell(2, 1, o).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "41a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, blank).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "42a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, o).\ncell(1, 2, o).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, x).\ncell(2, 3, blank).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "43a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, o).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "44a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, blank).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, o)."
+  },
+  "45a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, blank)."
+  },
+  "46a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, x).\ncell(3, 2, blank).\ncell(3, 3, blank)."
+  },
+  "47a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, o).\ncell(1, 3, blank).\ncell(2, 1, x).\ncell(2, 2, x).\ncell(2, 3, x).\ncell(3, 1, blank).\ncell(3, 2, o).\ncell(3, 3, o)."
+  },
+  "48a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, x).\ncell(1, 2, blank).\ncell(1, 3, x).\ncell(2, 1, o).\ncell(2, 2, o).\ncell(2, 3, x).\ncell(3, 1, o).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
+  "49a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, blank).\ncell(1, 2, x).\ncell(1, 3, o).\ncell(2, 1, blank).\ncell(2, 2, blank).\ncell(2, 3, o).\ncell(3, 1, blank).\ncell(3, 2, blank).\ncell(3, 3, x)."
+  },
   "50": {
     "name": "board_mnist_0",
     "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
@@ -397,6 +597,206 @@
   },
   "99": {
     "name": "board_mnist_49",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "50a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "51a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "52a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "53a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "54a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "55a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "56a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "57a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "58a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "59a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 2)."
+  },
+  "60a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "61a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "62a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "63a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "64a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "65a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "66a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "67a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "68a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "69a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "70a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "71a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "72a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "73a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "74a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "75a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "76a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "77a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "78a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "79a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 0)."
+  },
+  "80a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 2).\ncell(2, 2, 1).\ncell(2, 3, 1).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "81a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "82a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "83a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "84a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "85a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 1).\ncell(3, 3, 1)."
+  },
+  "86a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "87a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 2).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "88a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "89a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 1).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "90a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "91a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 0).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 2).\ncell(3, 1, 1).\ncell(3, 2, 2).\ncell(3, 3, 1)."
+  },
+  "92a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 1).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 2)."
+  },
+  "93a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 1).\ncell(3, 3, 2)."
+  },
+  "94a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "95a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 0).\ncell(1, 3, 0).\ncell(2, 1, 2).\ncell(2, 2, 0).\ncell(2, 3, 0).\ncell(3, 1, 1).\ncell(3, 2, 1).\ncell(3, 3, 0)."
+  },
+  "96a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 2).\ncell(1, 2, 2).\ncell(1, 3, 1).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 1)."
+  },
+  "97a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 0).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 1).\ncell(2, 3, 0).\ncell(3, 1, 0).\ncell(3, 2, 0).\ncell(3, 3, 2)."
+  },
+  "98a": {
+    "name": "ablation_img",
+    "board": "cell(1, 1, 1).\ncell(1, 2, 1).\ncell(1, 3, 2).\ncell(2, 1, 0).\ncell(2, 2, 0).\ncell(2, 3, 1).\ncell(3, 1, 0).\ncell(3, 2, 2).\ncell(3, 3, 0)."
+  },
+  "99a": {
+    "name": "ablation_img",
     "board": "cell(1, 1, 1).\ncell(1, 2, 2).\ncell(1, 3, 0).\ncell(2, 1, 1).\ncell(2, 2, 2).\ncell(2, 3, 1).\ncell(3, 1, 2).\ncell(3, 2, 0).\ncell(3, 3, 0)."
   }
 }

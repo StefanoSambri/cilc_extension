@@ -5,6 +5,7 @@ os.environ['OMP_NUM_THREADS'] = str(os.getenv('SLURM_CPUS_PER_TASK'))
 import re
 import gc
 import sys
+import json
 import torch
 import numpy as np
 import pandas as pd
@@ -15,7 +16,7 @@ script_dir = Path(__file__).resolve().parent
 base_dir = script_dir.parent
 sys.path.insert(0, str(base_dir))
 
-from utility.utility_functions import set_seeds, cache_dir, seed, trimmed_perplexity
+from utility.utility_functions import set_seeds, cache_dir, seed
 from utility.prompts import prompt
 
 set_seeds(seed)
@@ -53,71 +54,87 @@ for model_id in model_ids:
         dtype=torch.bfloat16
     )
     model.eval()
+    reasoning = True
 
     eos_token = tokenizer.encode('<｜end▁of▁sentence｜>')
 
     results = []
-    for _, row in df.iterrows():
+    truncated = 0
+    truncated_ablation = 0
+    for thinking_allowed in [True, False]:
+        for _, row in df.iterrows():
+            print(row)
+            messages = [{'role': 'user', 'content': f'{prompt}\n{row["user"]}'}]
+            target_ids = tokenizer.encode(row['target']) + eos_token[-1:]
 
-        messages = [{'role': 'user', 'content': f'{prompt}\n{row["user"]}'}]
-        input_data = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors='pt').to(model.device)
-        outputs = model.generate(**input_data, max_new_tokens=2048)
-        text = tokenizer.decode(outputs[0])
-        think_content = re.search(r'(<think>.*?</think>)', text + '</think>', re.DOTALL)
-        think_content = think_content.group(1)
-    
-        target_ids = tokenizer.encode(row['target']) + eos_token[-1:]
+            if thinking_allowed:
+                input_data = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors='pt').to(model.device)
+                outputs = model.generate(**input_data, max_new_tokens=2048)
+                text = tokenizer.decode(outputs[0])
+                if row['ablation']:
+                    if '</think>' not in text: truncated_ablation += 1
+                else:
+                    if '</think>' not in text: truncated += 1
+                think_content = re.search(r'(<think>.*?</think>)', text + '</think>', re.DOTALL)
+                think_content = think_content.group(1)
+                trace_len = len(tokenizer.encode(think_content, add_special_tokens=False))
+                
+                token_tensor = torch.tensor([tokenizer.encode(think_content + '\n\n')], device=input_data['input_ids'].device, dtype=input_data['input_ids'].dtype)
+                input_ids = torch.cat([input_data['input_ids'], token_tensor], dim=1)
+                input_data['input_ids'] = input_ids
+                input_data['attention_mask'] = torch.ones_like(input_data['input_ids'])
+            else:
+                trace_len = None
+                input_data = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_dict=True, return_tensors='pt').to(device=model.device)
+                token_tensor = torch.tensor([tokenizer.encode('<think></think>\n\n')], device=input_data['input_ids'].device, dtype=input_data['input_ids'].dtype)
+                input_ids = torch.cat([input_data['input_ids'], token_tensor], dim=1)
+                input_data['input_ids'] = input_ids
+                input_data['attention_mask'] = torch.ones_like(input_data['input_ids'])
 
-        prefill_tensor = input_data['input_ids']
-        token_tensor = torch.tensor([tokenizer.encode(think_content)], device=prefill_tensor.device, dtype=prefill_tensor.dtype)
-        input_ids = torch.cat([input_data['input_ids'], token_tensor], dim=1)
-        input_data['input_ids'] = input_ids
-        input_data['attention_mask'] = torch.ones_like(input_data['input_ids'])
+            prob_hist = []
+            log_probs = []
+            top_tokens_hist = []
+            top_probs_hist = []
+            for token in target_ids: 
+                with torch.no_grad():  
+                    outputs = model(**input_data)
+                logits = outputs.logits[:, -1, :]
+                logits = logits.to(torch.float64)
+                probs = torch.nn.functional.softmax(logits, dim=-1)
+                top_probs, top_ids = torch.topk(probs[0], k=40)
+                top_tokens_hist.append(top_ids.tolist())
+                top_probs_hist.append(top_probs.tolist())
+                token_prob = probs[0, token].item()
+                prob_hist.append(np.float64(token_prob))
+                log_probs.append(np.log(np.float64(token_prob)))
+                token_tensor = torch.tensor([[token]], device=input_data['input_ids'].device, dtype=input_data['input_ids'].dtype)
+                input_ids = torch.cat([input_data['input_ids'], token_tensor], dim=1)
+                input_data['input_ids'] = input_ids
+                input_data['attention_mask'] = torch.ones_like(input_data['input_ids']).to(model.device)
 
-        prob_hist = []
-        log_probs = []
-        top_tokens_hist = []
-        top_probs_hist = []
-        for token in target_ids: 
-            with torch.no_grad():  
-                outputs = model(**input_data)
-            logits = outputs.logits[:, -1, :]
-            logits = logits.to(torch.float64)
-            probs = torch.nn.functional.softmax(logits, dim=-1)
-            top_probs, top_ids = torch.topk(probs[0], k=20)
-            top_tokens_hist.append(top_ids.tolist())
-            top_probs_hist.append(top_probs.tolist())
-            token_prob = probs[0, token].item()
-            prob_hist.append(np.float64(token_prob))
-            log_probs.append(np.log(np.float64(token_prob)))
-            token_tensor = torch.tensor([[token]], device=prefill_tensor.device, dtype=prefill_tensor.dtype)
-            input_ids = torch.cat([input_data['input_ids'], token_tensor], dim=1)
-            input_data['input_ids'] = input_ids
-            input_data['attention_mask'] = torch.ones_like(input_data['input_ids']).to(model.device)
+            nll = -np.sum(np.array(log_probs, dtype=np.float64)) / np.float64(len(log_probs))
+            perplexity = np.exp(nll).astype(np.float64)
 
-        nll = -np.sum(np.array(log_probs, dtype=np.float64)) / np.float64(len(log_probs))
-        perplexity = np.exp(nll).astype(np.float64)
-        perplexity_99 = trimmed_perplexity(log_probs, 0.01)
-        perplexity_95 = trimmed_perplexity(log_probs, 0.05)
-        perplexity_90 = trimmed_perplexity(log_probs, 0.10)
-
-        result = {
-            'prompt': row['user'],
-            'target': row['target'],
-            'target_ids': target_ids,
-            'probabilities': np.array(prob_hist, dtype=np.float64),
-            'top_20_tokens': top_tokens_hist,
-            'top_20_probs': np.array(top_probs_hist, dtype=np.float64),
-            'perplexity': np.float64(perplexity),
-            'perplexity_99': np.float64(perplexity_99),
-            'perplexity_95': np.float64(perplexity_95),
-            'perplexity_90': np.float64(perplexity_90)
-        }
-        results.append(result)
+            result = {
+                'reasoning': reasoning,
+                'ablation' : row['ablation'],
+                'thinking_allowed' : thinking_allowed,
+                'trace_len' : trace_len,
+                'prompt': row['user'],
+                'target': row['target'],
+                'target_ids': target_ids,
+                'probabilities': np.array(prob_hist, dtype=np.float64),
+                'top_40_tokens': top_tokens_hist,
+                'top_40_probs': np.array(top_probs_hist, dtype=np.float64),
+                'perplexity': np.float64(perplexity),
+            }
+            results.append(result)
 
     with output_file.open('wb') as f: np.save(f, results, allow_pickle=True) 
+    if reasoning: 
+        with output_file.with_suffix('.json').open('w') as f: json.dump([{'n_truncated': truncated}, {'n_truncated_ablation': truncated_ablation}], f, indent=2) 
 
-    del model, tokenizer, prob_hist, log_probs, logits, token_tensor, target_ids, input_data, prefill_tensor, think_content, outputs
+    del model, tokenizer, prob_hist, log_probs, logits, token_tensor, target_ids, input_data, think_content, outputs
     gc.collect()
     torch.cuda.empty_cache()
     torch.cuda.synchronize()

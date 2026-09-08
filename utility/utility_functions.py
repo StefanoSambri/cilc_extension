@@ -106,18 +106,6 @@ def get_kernel(repo_id: str = None, revision: str = None) -> types.ModuleType:
     spec.loader.exec_module(mod)
     return mod
 
-def trimmed_perplexity(log_probs : list[np.ndarray[np.float64]], trim_ratio: float) -> np.float64:
-    log_probs = np.asarray(log_probs, dtype=np.float64)
-
-    sorted_idx = np.argsort(log_probs)
-
-    k = int(np.ceil(len(log_probs) * trim_ratio))
-    kept_idx = np.sort(sorted_idx[k:])
-    trimmed = log_probs[kept_idx]
-
-    nll = -np.sum(trimmed, dtype=np.float64) / np.float64(len(trimmed))
-    return np.exp(nll).astype(np.float64)
-
 def encode_image(image_path: Path) -> str:
     with image_path.open('rb') as f:
         return base64.b64encode(f.read()).decode('utf-8')
