@@ -1,4 +1,4 @@
-# BPB Paired Bootstrap Text Model Comparisons
+# BPB Paired Bootstrap Confidence Intervals Text Models
 
 ## GMS8K Istances
 

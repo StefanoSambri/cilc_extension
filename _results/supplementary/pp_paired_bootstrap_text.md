@@ -1,4 +1,4 @@
-# PP Paired Bootstrap Text Model Comparison
+# PP Paired Bootstrap Confidence Intervals Text Model
 
 ## GMS8K Istances
 

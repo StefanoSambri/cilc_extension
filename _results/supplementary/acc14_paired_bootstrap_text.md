@@ -1,4 +1,4 @@
-# Top-14 Accuracy Paired Bootstrap Text Model Comparison
+# Top-14 Accuracy Paired Bootstrap Confidence Intervals Text Model
 
 ## GMS8K Istances
 

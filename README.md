@@ -111,13 +111,13 @@ Qwen/QwQ-32B	                                976055f8c83f394f35dbd3ab09a285a9849
 ```
 ## Dataset
 
-Image dataset is located in `_dataset/dataset_img/`.
+Image dataset is provided in `_dataset/dataset_img/`.
 
-Text dataset is located in `_dataset/dataset_txt.json`.
+Text dataset is provided in `_dataset/dataset_txt.json`.
 
 ## Prompts
 
-Prompts used are located in `utility/prompts.py`.
+Prompts used are provided in `utility/prompts.py`.
 
 - `prompt_ttt` Used for images with classical handwritten symbols.
 
@@ -127,8 +127,8 @@ Prompts used are located in `utility/prompts.py`.
 
 ## Results
 
-Multimodal models results are located in `_results/multimodal/`.
+Multimodal models results are provided in `_results/multimodal/`.
 
-Text models results are located in `_results/text/`.
+Text models results are provided in `_results/text/`.
 
-Supplementary bootstrap pair test are located in `_results/supplementary/`.
+Supplementary bootstrap paired confidence intervals are provided in `_results/supplementary/`.

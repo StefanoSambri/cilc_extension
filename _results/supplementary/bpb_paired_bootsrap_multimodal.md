@@ -1,4 +1,4 @@
-# BPB Paired Bootstrap Multimodal Model Comparisons
+# BPB Paired Bootstrap Confidence Intervals Multimodal Models
 
 ## TicTacToe Images
 

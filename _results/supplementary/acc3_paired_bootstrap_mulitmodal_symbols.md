@@ -1,4 +1,4 @@
-# Top-3 Accuracy Paired Bootstrap Multimodal Model Comparison (symbols)
+# Top-3 Accuracy Paired Bootstrap Confidence Intervals Multimodal Model (symbols)
 
 ## TicTacToe Images
 

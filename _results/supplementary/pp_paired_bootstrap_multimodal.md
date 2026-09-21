@@ -1,4 +1,4 @@
-# PP Paired Bootstrap Multimodal Model Comparison
+# PP Paired Bootstrap Confidence Intervals Multimodal Model
 
 ## TicTacToe Images
 
