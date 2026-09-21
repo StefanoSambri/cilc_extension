@@ -130,3 +130,5 @@ Prompts used are located in `utility/prompts.py`.
 Multimodal models results are located in `_results/multimodal/`.
 
 Text models results are located in `_results/text/`.
+
+Supplementary bootstrap pair test are located in `_results/supplementary/`.
